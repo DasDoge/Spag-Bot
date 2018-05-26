@@ -3,7 +3,7 @@ const is = new require("image-search-google");
 
 var client = new discord.Client();
 var spag = "🍝";
-var noodlz = ["spaghetti","rotini","manicotti","campanelle","fusilli","ravioli","lasagne","riccioli","tagliatelle","rotelle","rigatoni","tortellini","fettuccine","ziti","orzo","linguine","farfalle","penne","orecchiette","pappardelle",spag];
+var noodlz = ["spaghetti","macaroni","manicotti","capellini","campanelle","fusilli","ravioli","lasagne","riccioli","tagliatelle","rotelle","rigatoni","tortellini","fettuccine","ziti","orzo","linguine","farfalle","penne","orecchiette","pappardelle",spag];
 var token = "";
 var cseID = "";
 var api_k = "";
