@@ -4,9 +4,9 @@ const is = new require("google-images");
 var client = new discord.Client();
 var spag = "🍝";
 var noodlz = ["spaghetti","macaroni","manicotti","capellini","campanelle","fusilli","ravioli","lasagne","riccioli","tagliatelle","rotelle","rigatoni","tortellini","fettuccine","ziti","orzo","linguine","farfalle","penne","orecchiette","pappardelle",spag];
-var token = "";
-var cseID = "";
-var api_k = "";
+var token = "NDQ5NjAxNjI0ODM1MzU4NzIw.Denefw.PTCFTe0u_hqh7vczgk4vnthRzUU";
+var cseID = "017177422310546430017:eha1j3ickmy";
+var api_k = "AIzaSyBb0szj7MXGhJdG96qzHryNjuGmFIrOMUk";
 var search = new is(cseID, api_k);
 
 client.on("ready", function() {
@@ -38,12 +38,7 @@ client.on("message", msg => {
 		});
 	} else if (c=="help") {
 		msg.channel.send(`\`\`\`
-Usage: ${spag}<type>
-Types:
-
-${noodlz.join("\n")} (random)
-
-There are only 100 Spaghettis available per day so pls no spam k thx\`\`\``);
+Usage: ${spag}<type>\nTypes:\n\n${noodlz.join("\n")} (random)\n\nThere are only 100 Spaghettis available per day so pls no spam k thx\`\`\``);
 	}
 });
 
