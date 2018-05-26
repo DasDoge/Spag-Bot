@@ -5,7 +5,7 @@
   "main": "Bot.js",
   "dependencies": {
     "discord.js": "^11.3.2",
-    "image-search-google": "^1.0.10"
+    "google-images": "^2.1.0"
   },
   "devDependencies": {},
   "scripts": {

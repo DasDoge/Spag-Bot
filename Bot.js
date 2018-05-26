@@ -1,5 +1,5 @@
 const discord = require("discord.js");
-const is = new require("image-search-google");
+const is = new require("google-images");
 
 var client = new discord.Client();
 var spag = "🍝";
@@ -30,7 +30,8 @@ client.on("message", msg => {
 			c=noodlz[Math.ceil(Math.random()*noodlz.length-1)-1];
 		}
     search.search(c, {page: Math.ceil(Math.random()*3)}).then(res=>{
-			msg.channel.send(res[Math.ceil(Math.random()*res.length)-1].url);
+			let r = res[Math.ceil(Math.random()*res.length)-1];
+			msg.channel.send(`(${Math.round(r.size/1000)}KB) ${r.url}`);
 		}).catch(e=>{
 			msg.channel.send("No more "+spag+" today :c");
 			console.log(e);
